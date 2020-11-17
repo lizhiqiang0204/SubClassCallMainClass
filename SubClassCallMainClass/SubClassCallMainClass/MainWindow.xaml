@@ -1,0 +1,20 @@
+﻿<Window x:Class="SubClassCallMainClass.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubClassCallMainClass"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid >
+            <RichTextBox   VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextChanged="LogTextChanged" Margin="0,0,0,79" >
+                <FlowDocument>
+                    <Paragraph x:Name="myParagraph" />
+                </FlowDocument>
+            </RichTextBox>
+            <Button x:Name="myButton" Content="开始" Click="BtnClickWork" HorizontalAlignment="Left" Margin="400,380,0,0" VerticalAlignment="Top"/>
+            <Button Content="显示" Click="BtnClickDis" HorizontalAlignment="Left" Margin="478,380,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>
